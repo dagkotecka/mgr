@@ -1,0 +1,52 @@
+\documentclass[10pt,a4paper,twoside]{report}
+
+\usepackage{gutthesis}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{spy}
+\usepackage{siunitx}
+\usepackage{amsmath}
+
+\usepackage{subfig}
+
+\author{Dagmara Kotecka}
+\title{Tytul pracy}
+
+
+\begin{document}
+
+\includepdf{TitlePage.pdf}
+\includepdf{Statement.pdf}
+
+\input{./tex/abstract.tex}
+
+\singlespacing
+\tableofcontents
+\onehalfspacing
+
+\input{./tex/chapter1.tex}
+\input{./tex/chapter2.tex}
+\input{./tex/chapter3.tex}
+\input{./tex/chapter4.tex}
+\input{./tex/chapter5.tex}
+\input{./tex/chapter6.tex}
+
+\input{./tex/summary.tex}
+
+\singlespacing
+\bibliography{bibliography}
+\bibliographystyle{IEEEtranN}
+\addcontentsline{toc}{chapter}{Bibliography}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\onehalfspacing
+
+\begin{appendices}
+
+\input{./tex/appendix_A.tex}
+
+\end{appendices}
+
+\end{document}

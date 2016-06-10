@@ -1,0 +1,181 @@
+\chapter{Scrum overview}
+The concept of agile development was proposed in 2001. Agile Manifest was elaborated by 17 developers, the purpose of it was to gather all important rules how to properly produce a good quality product:
+
+"We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:
+
+Individuals and interactions over processes and tools \hfill \break
+Working software over comprehensive documentation \hfill \break
+Customer collaboration over contract negotiation \hfill \break
+Responding to change over following a plan \hfill \break
+
+That is, while there is value in the items on
+the right, we value the items on the left more." \cite{AgileManifesto}
+
+The Agile Manifesto is based on following twelve principles:
+
+\begin{enumerate}
+    \item Our highest priority is to satisfy the customer
+through early and continuous delivery
+of valuable software.
+\item Welcome changing requirements, even late in 
+development. Agile processes harness change for 
+the customer's competitive advantage.
+\item Deliver working software frequently, from a 
+couple of weeks to a couple of months, with a 
+preference to the shorter timescale.
+\item Business people and developers must work 
+together daily throughout the project.
+\item Build projects around motivated individuals. 
+Give them the environment and support they need, 
+and trust them to get the job done.
+\item The most efficient and effective method of 
+conveying information to and within a development 
+team is face-to-face conversation.
+\item Working software is the primary measure of progress.
+\item Agile processes promote sustainable development. 
+The sponsors, developers, and users should be able 
+to maintain a constant pace indefinitely.
+\item Continuous attention to technical excellence 
+and good design enhances agility.
+\item Simplicity--the art of maximizing the amount 
+of work not done--is essential.
+\item The best architectures, requirements, and designs 
+emerge from self-organizing teams.
+\item At regular intervals, the team reflects on how 
+to become more effective, then tunes and adjusts 
+its behavior accordingly.\cite{AgileManifesto}
+\end{enumerate} 
+
+Scrum is the most popular agile methodology for developing products and services \cite{ArticleStateOfAgile}. The \autoref{fig:agileDiagram} shows, in a simplified way, how agile development works \cite{ScrumBook}. The main rule in development using Scrum methodology is that after each iteration (2-4 weeks of implementing planned features) the customer is able to get a usable product. The principle artifact in Scrum is product backlog, which is a list of features based on customer requirements, it should be prioritized from the most important functions to "nice to have" features or just less urgent. The backlog contains user stories, which is a form of expressing business requirement in Scrum, it is created in a way that can be understandable for both sides, business and development. There are a few templates with different structure, but the most popular and commonly used is:
+
+\begin{enumerate}
+    \item Basic User Story structure \cite{ScrumBook}
+    \begin{enumerate}
+        \item As <who, a role in system>, I want <what, a need> so that <benefit, goal> e.g.:
+            \begin{enumerate}
+                \item As \textit{a company owner}, I want \textit{the company logo to be visible on the welcome page} so that \textit{customers are able to see it}.
+            \end{enumerate}
+    \end{enumerate}
+    \item Mike Cohn's User Story Structure \cite{MikeCohnUS}
+    \begin{enumerate}
+        \item As <a role>, I want <goal/desire> e.g.:
+        \begin{enumerate}
+            \item As a \textit{user}, I want \textit{the company logo to be visible on the welcome page}.
+        \end{enumerate}
+    \end{enumerate}
+    \item Chriss Matts's User Story Structure \cite{AntonyMarcanoUS}
+    \begin{enumerate}
+        \item In order to <receive benefit> as a <role>, I want <goal/desire>
+        \begin{enumerate}
+            \item In order to \textit{increase the number of sales of our print consumables} as a \textit{marketing manager}, I want \textit{customers to register their e-mail addresses}.
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+A user story is created to store it in Product Backlog and in the future divide it to tasks, but in order to do it developers should know the requirements, so the main purpose of user story is to start conversation, it is a catalyst to talk about requirements.
+
+\begin{figure}[h]
+\caption{Agile development overview} \cite{ScrumBook}
+\label{fig:agileDiagram}
+\centering
+\includegraphics[width=1\textwidth]{img/agileDiagram}
+\end{figure}
+
+\section{Scrum in theory}
+In this section we will focus on scrum in theory, how it works, what are the required elements - who is required and what meetings. Often scrum in theory differs from scrum in practice and it is said that Scrum is just a tool and it should adjust to the team, not the other way.
+\subsection{Process phases}
+Scrum is a methodology based on incremental and iterative model of product development cycle as showed on \autoref{fig:agileMethodology}.
+
+\begin{figure}[h]
+\caption{ Scrum cycle development \break Source: https://www.inflectra.com/Methodologies/Waterfall.aspx}
+\label{fig:agileMethodology}
+\centering
+\includegraphics[width=1\textwidth]{img/iterativeScrum}
+\end{figure}
+
+The incremental-iterative model is divided into stages, one whole cycle is called sprint, it is suggested that each sprint should be 2-4 weeks long. Every cycle contains planning, gathering requirements and deciding, what and how should be done, analysis and design, implementing what was planned on the particular iteration, in this moment of cycle we have two paths, we can decide to deploy our product if it is done or continue to next stage which is testing. The last element of the cycle is evaluation, if everything what was planned was actually implemented. The cycle is actually straight-forward and is very effective.
+
+\subsection{Roles in scrum}
+Scrum has determined each team member included in the project a particular role \autoref{fig:rolesScrum}, each role has it's own responsibilities.
+
+\begin{figure}[h]
+\caption{Roles in scrum \cite{ScrumBook}}
+\label{fig:rolesScrum}
+\centering
+\includegraphics[width=0.75\textwidth]{img/roles}
+\end{figure}
+
+Product owner is a person that need to look in at least two directions simultaneously \cite{ScrumBook}. This role is responsible for communication between stakeholders and the scrum team. The principle obligations are shown in the \autoref{fig:prodOwnerRes}.
+
+\begin{figure}[h]
+\caption{Product owner responsibilities \cite{ScrumBook}}
+\label{fig:prodOwnerRes}
+\centering
+\includegraphics[width=0.75\textwidth]{img/prodRes}
+\end{figure}
+
+Product owner represents scrum team outside and is responsible for product development, decides which feature should be included in a particular sprint, adds user stories and features to the backlog, defines acceptance criteria and verifies whether they are full filled after the sprint. 
+
+Another important person in Scrum Team is Scrum Master, whose responsibility is illustrated on \autoref{fig:masterRes}. Mainly his role is to superintend the process and help development team to adapt to the agile methodology. This role is responsible mainly for removing impediments that inhibit team's productivity, protects team from outside interference so that they can remain focused on delivering good quality business value every sprint, servant leader of the Scrum team and team's process authority \cite{ScrumBook}.
+
+\begin{figure}[h]
+\caption{Scrum master responsibilities \cite{ScrumBook}}
+\label{fig:masterRes}
+\centering
+\includegraphics[width=0.5\textwidth]{img/masterRes}
+\end{figure}
+
+The last, but without which there would be no product and which is essential, is development team, also called delivery team, design-build-test team or just team. Types of jobs in a development team for example are: architect, programmer, tester, database administrator, user interface designer and many more. Development team is responsible for product implementation, testing, integration and design. The team should include people of various specializations and skills, who can fulfill project requirements. Delivery team is obliged to perform sprint execution, which means performing actions that will result with a ready functionality. Each member of the team is expected to participate in scrum meeting such as described in \autoref{chap:meetingsOverview}. On this group this work will be mainly focused on.
+
+\begin{figure}[h]
+\caption{Development Team responsibilities \cite{ScrumBook}}
+\label{fig:devtRes}
+\centering
+\includegraphics[width=1\textwidth]{img/developmentRes}
+\end{figure}
+
+\subsection{Meetings overview}
+\label{chap:meetingsOverview}
+
+A product development is composed of multiple sprints, which can last 2-4 weeks \cite{ScrumBook} and each iteration should deliver a usable product to a customer, which does not mean ready or fully functional implementation, just a product that can be potentially shippable. Before sprint execution there should be a Backlog Grooming meeting, each iteration starts with Sprint planning and ends with Sprint Review and Retrospective, what is more every day begins with Daily Scrum. The next sections will describe all the meetings separately. 
+
+\begin{figure}[h]
+\caption{Scrum meetings and process 
+\\ Source: http://blog.fluidui.com/design-is-changing-agile-for-the-better-heres-why/}
+\label{fig:meetingsScrum}
+\centering
+\includegraphics[width=1\textwidth]{img/agile-graphic}
+\end{figure}
+
+\subsubsection{Backlog grooming}
+This meeting is focused on maintaining the product backlog, it should be executed before next sprint planning. The main aim of this meeting is to \cite{ScrumBook2}:
+
+\begin{itemize}
+    \item remove user stories that are no longer relevant,
+    \item creating new user stories in response to newly discovered needs,
+    \item prioritizing the user stories, 
+    \item assigning or correcting estimates to user stories,
+    \item splitting user stories which are high priority but too big to fit in an upcoming iteration.
+\end{itemize} 
+
+On the Backlog Grooming it is mandatory that the Product Owner is present, Development Team and Scrum Master presence is optional.
+
+\subsubsection{Planning}
+Planning is a meeting on which Product Owner shares initial sprint goal and answers questions regarding product backlog items. The teams' role is to divide user stories into tasks and determine what can they deliver and makes a realistic commitment. 
+
+\begin{figure}[h]
+\caption{Scrum One-part sprint-planning approach \cite{ScrumBook}}
+\label{fig:planningDiagram}
+\centering
+\includegraphics[width=1\textwidth]{img/sprintPlanning}
+\end{figure}
+
+\subsubsection{Review}
+
+\subsubsection{Retrospective}
+
+\subsubsection{Daily scrum}
+
+\section{Scrum in practice}
