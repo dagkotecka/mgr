@@ -139,7 +139,7 @@ The last, but without which there would be no product and which is essential, is
 \subsection{Meetings overview}
 \label{chap:meetingsOverview}
 
-A product development is composed of multiple sprints, which can last 2-4 weeks \cite{ScrumBook} and each iteration should deliver a usable product to a customer, which does not mean ready or fully functional implementation, just a product that can be potentially shippable. Before sprint execution there should be a Backlog Grooming meeting, each iteration starts with Sprint planning and ends with Sprint Review and Retrospective, what is more every day begins with Daily Scrum. The next sections will describe all the meetings separately \cite{ScrumBook}. 
+A product development is composed of multiple sprints, which can last 2-4 weeks \cite{ScrumBook} and each iteration should deliver a usable product to a customer, which does not mean ready or fully functional implementation, just a product that can be potentially shippable. As presented on \autoref{fig:meetingsScrum}, before sprint execution there should be a Backlog Grooming meeting, each iteration starts with Sprint planning and ends with Sprint Review and Retrospective, what is more every day begins with Daily Scrum. The next sections will describe all the meetings separately \cite{ScrumBook}. 
 
 \begin{figure}[h]
 \caption{Scrum meetings and process 
@@ -149,8 +149,7 @@ A product development is composed of multiple sprints, which can last 2-4 weeks 
 \includegraphics[width=1\textwidth]{img/agile-graphic}
 \end{figure}
 
-\subsubsection{Backlog grooming}
-This meeting is focused on maintaining the product backlog, it should be executed before next sprint planning. The main aim of this meeting is to \cite{ScrumBook2}:
+This Backlog grooming meeting is focused on maintaining the product backlog, it should be executed before next sprint planning. The main aim of this meeting is to \cite{ScrumBook2}:
 
 \begin{itemize}
     \item remove user stories that are no longer relevant,
@@ -160,10 +159,16 @@ This meeting is focused on maintaining the product backlog, it should be execute
     \item splitting user stories which are high priority but too big to fit in an upcoming iteration.
 \end{itemize} 
 
-On the Backlog Grooming it is mandatory that the Product Owner is present, Development Team and Scrum Master presence is optional.
+On the Backlog Grooming it is mandatory that the Product Owner is present, Developments' Team and Scrum Masters' presence is optional \cite{ScrumBook}.
 
-\subsubsection{Planning}
-Planning is a meeting on which Product Owner shares initial sprint goal and answers questions regarding product backlog items. The teams' role is to divide user stories into tasks and determine what can they deliver and makes a realistic commitment. 
+The Sprint Planning is a meeting on which Product Owner shares initial sprint goal and answers questions regarding product backlog items. The initial requirements should be accomplished in order to start the meeting \cite{IntroToScrumBook}:
+\begin{enumerate}
+    \item Prioritized backlog after backlog grooming.
+    \item The highest-priority stories should be estimated.
+    \item Prepared definition of done.
+    \item The capacity of the team should be known, for example the team has a meeting outside working place that might affect the sprint, this should be included in the capacity field.
+\end{enumerate}
+Two distinct objectives might be retrieved from the Sprint planning. Firstly, we must ensure that each team member understands what is expected to do in the particular user story and secondly divide user stories into tasks and determine what can they deliver and makes a realistic commitment. Each team member might select one of the tasks, which is willing to own and complete, but it is not a required action, which must be performed. Thereafter, the team estimates, taking all the factors into the consideration, the risk, developers experience, the difficulty of the task and estimate in hours how long it might take to complete a task. From the Sprint planning we have two primary outputs, first is the goal of the iteration, which means, what users stories should be delivered, second is the sprint backlog with list of created tasks \cite{ScrumBook, IntroToScrumBook}. 
 
 \begin{figure}[h]
 \caption{Scrum One-part sprint-planning approach \cite{ScrumBook}}
@@ -172,10 +177,26 @@ Planning is a meeting on which Product Owner shares initial sprint goal and answ
 \includegraphics[width=1\textwidth]{img/sprintPlanning}
 \end{figure}
 
-\subsubsection{Review}
+The Review is a meeting in Scrum which takes place at the end of an iteration. The product owner, scrum master and development team should be present, on the list of invited people might customers and managers may be included. The review meeting is a demo of a product that has been delivered after a sprint and also a chance for the customers to provide feedback. Quoting the agile manifesto "Working software is the primary measure of progress." and "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage." those rules are fulfilled thanks to the review meeting \cite{DotNetScrumBook}.
 
-\subsubsection{Retrospective}
+The Daily Stand-ups is a short meeting which is held every day during the sprint and its purpose is to discuss issues that are preventing work from being done and how is the work progress. The Daily Stand-ups are time boxed to no longer than 15 minutes and the participants are obliged to stand. The team members stand in the circle and and answer the following questions \cite{DotNetScrumBook}:
+\begin{enumerate}
+    \item What have you done since yesterday?
+    \item What are you planning to do today?
+    \item Do you have any problems preventing you from accomplishing your goal? What progress has been made on existing impediments? Can the blockage be removed or must it be escalated?
+\end{enumerate}
 
-\subsubsection{Daily scrum}
+It is indicated that in order to keep the meeting short, the major issues which were discovered during the Daily Stand-up will be discussed afterwards \cite{DotNetScrumBook}.
+
+The Retrospective meeting takes place at the end of the meeting and is strictly focused on reflection of team members on the sprint that has passed. The encounter provides the participants a chance to congratulate each other on the things that succeeded and discuss once that went wrong \cite{DotNetScrumBook}. The purpose of the retrospective was summarized by Norm Kerth, by quoting a fragment from "Winnie the Pooh" \cite{ScrumBook}:
+\begin{displayquote}
+Here is Edward Bear, coming downstairs now, bump, bump, bump, bump, on the back of his head, behind Christopher Robin. It is, as far as he knows, the only way of coming downstairs, but sometimes he feels that there is another way, if only he could stop bumping for a moment and think of it.
+\end{displayquote}
+
+The Sprint Retrospective allows the participants to stop bumping and have a moment to think. The target is to examine what is happening in the team, analyze the way the team is working, identify the problems and ways to improve. The areas that the team should focus on and which are up for discussion are processes, practices, communication, environment, artifacts, tools, internal and external issues within the project and the development group \cite{ScrumBook}.
+
+It is said that the Sprint Retrospective is one of the most important and least appreciated practices in the Scrum and this is because there are people who think that it takes time away from doing "real things" such as developing, testing, designing. Its importance comes from fact that using this approach the team members are able to customize scrum to theirs needs and it is a crucial contributor, as written in Agile Manifesto \cite{AgileManifesto}, to continuous improvement \cite{ScrumBook}.
 
 \section{Scrum in practice}
+
+
